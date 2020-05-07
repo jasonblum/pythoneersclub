@@ -1,3 +1,4 @@
+{% load static %}
   <!doctype html>
   <html lang="en">
   <head>
@@ -5,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Jason Blum">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'shared/images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'shared/images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'shared/images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'shared/images/site.webmanifest' %}">
+
+
+
+
     <title>Pythoneers.Club</title>
 
-<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-rCA2D+D9QXuP2TomtQwd+uP50EHjpafN+wruul0sXZzX/Da7Txn4tB9aLMZV4DZm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-rCA2D+D9QXuP2TomtQwd+uP50EHjpafN+wruul0sXZzX/Da7Txn4tB9aLMZV4DZm" crossorigin="anonymous">
 
     <style>
       .bd-placeholder-img {
@@ -44,7 +54,11 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="/">Pythoneers.Club</a>
+          
+          <a class="navbar-brand" href="/">
+            <img src="{% static 'shared/images/pythoneers.png' %}" width='50'>
+            Pythoneers.Club
+          </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,7 +68,7 @@
 
       <div class="starter-template">
         <h1>Welcome to Pythoneers.Club!</h1>
-        <p class="lead">Just cobbling this site together - will probably be something like a tag-cloud of resources, tutorials, etc.</p>
+        <p class="lead">Just cobbling as we get things rolling...</p>
       </div>
 
 
@@ -64,10 +78,9 @@
           Intro
         </div>
         <div class="card-body">
-          <p>We're just sketching this out, but the general idea behind Pythoneers.Club, is that coders work asynchronously, remotely and on so many different platforms solving so many different kinds of problems, that it can be difficult to learn how or where to ask each other for help.  It's hard to know how to isolate the relevant part of your code you're struggling with to share with others.  And how do you <em>share</em> it?  Sometimes you know there's a way to do something, you just don't know what words to use to describe it.  And even then, who are you going to ask?</p>
-          <p>The good news is that it is extremely rare to find a problem in programming someone else hasn't already solved.  The answers are out there, and the Python community is particularly well-known for being incredibly welcoming, generous and helpful.</p>
-          <p>So Pythoneers.Club is here to introduce you to that community.</p>
-          <p>We'll steer you towards great online tutorials, books and videos like <a href="http://Pythoneers.Club/codeacademy">CodeAcademy</a>, <a href="https://arcade.academy/">Arcade</a>, the <a href="https://codewith.mu/">Mu Editor</a>, <a href="https://codecombat.com/">Code Combat</a>, <a href="https://checkio.org/">Check.io</a>, great books like <a href="https://books.trinket.io/pfe/">Python for Everybody</a> and <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a>, hysterical but really substantive video tutorials like <a href="http://Pythoneers.Club/socratica">Socratica</a>, and so much more!  (Watch this space for a tag-cloud of recommended resources.)</p>
+          <p>We're just sketching this out, but the general idea behind Pythoneers.Club, is that coders work asynchronously, remotely and on so many different platforms solving so many different kinds of problems, that it can be difficult to learn how or where to ask each other for help.  It's especially hard to know how to isolate the relevant part of your code you're struggling with to share with others.  And then how do you <em>share</em> it?  Sometimes you just know there's a way to do something, but you don't know what words to use to describe it.  And even then, who are you going to ask?</p>
+          <p>The good news is that it is extremely rare to find a problem in programming someone else hasn't already solved.  The answers are out there, and the <a href="https://www.python.org/community/">Python community</a> is particularly well-known for being incredibly welcoming, generous and helpful.</p>
+          <p>So Pythoneers.Club is here to introduce Middle and High School students to that community!  We'll steer you towards great online tutorials, books and videos like <a href="http://Pythoneers.Club/codeacademy">CodeAcademy</a>, <a href="https://arcade.academy/">Arcade</a>, the <a href="https://codewith.mu/">Mu Editor</a>, <a href="https://codecombat.com/">Code Combat</a>, <a href="https://checkio.org/">Check.io</a>, great books like <a href="https://books.trinket.io/pfe/">Python for Everybody</a> and <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a>, hysterical but really substantive video tutorials like <a href="http://Pythoneers.Club/socratica">Socratica</a>, and so much more!  (Watch this space for a tag-cloud of recommended resources.)</p>
           <p>But, rather than try to teach or work together through any particular curriculum, we're going to focus on helping you choose you own, and then giving you somewhere to go when you need help.</p>
           <p>For starters, everyone should bookmark this awesome <a href="http://Pythoneers.Club/cheatsheet">Pythoneers.Club/cheatsheet</a>.</p>
           <p>We'll support each other in our chat room on Discord: <a href="https://www.pythoneers.club/chat">Pythoneers.Club/chat</a>.</p>
@@ -76,9 +89,11 @@
           <iframe src="https://trinket.io/embed/python3/f8a57a81e4?start=result" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
         </div>
       </div>
+      <div class='text-center'>
+        <img src="{% static 'shared/images/pythoneers.png' %}" class='mt-2'>
+      </div>
 
 
-      <p/>&nbsp;<p/>&nbsp;
 
 
     </main><!-- /.container -->
