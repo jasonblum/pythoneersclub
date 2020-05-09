@@ -12,6 +12,7 @@ urlpatterns = [
     path('cheatsheet/', RedirectView.as_view(url='https://learnxinyminutes.com/docs/python/')),
     path('codeacademy/', RedirectView.as_view(url='https://www.codecademy.com/catalog/language/python')),
     path('comics/', RedirectView.as_view(url='https://www.dropbox.com/sh/28ab0g5jags1xam/AAAYoFDBXk90V_-TSFjlb8O6a')),
+    path('huskies/', RedirectView.as_view(url='https://drive.google.com/drive/folders/1zIXnPedsIrg0uOK9oPx2dGUjC_D5mp8b?usp=sharing')),
     path('socratica/', RedirectView.as_view(url='https://www.youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-')),
     path('trinket/', RedirectView.as_view(url='https://trinket.io/courses/join/JXnYU8')),
 	
