@@ -10,6 +10,7 @@ urlpatterns = [
 
     re_path(r'^(?i)chat/', RedirectView.as_view(url='http://discord.gg/2USePEX')),
     re_path(r'^(?i)cheatsheet/', RedirectView.as_view(url='https://learnxinyminutes.com/docs/python/')),
+    re_path(r'^(?i)coc/', RedirectView.as_view(url='https://www.python.org/psf/conduct/')),
     re_path(r'^(?i)codeacademy/', RedirectView.as_view(url='https://www.codecademy.com/learn/learn-python-3')),
     re_path(r'^(?i)comics/', RedirectView.as_view(url='https://www.dropbox.com/sh/28ab0g5jags1xam/AAAYoFDBXk90V_-TSFjlb8O6a')),
     re_path(r'^(?i)join/', RedirectView.as_view(url='https://forms.gle/aQaa9qyFwxNSA7HB7')),
